@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the capital of India?",
+    "answerOptions": [
+      { "answerText": "New Delhi", "isCorrect": true },
+      { "answerText": "Mumbai", "isCorrect": false },
+      { "answerText": "Kolkata", "isCorrect": false },
+      { "answerText": "Chennai", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "answerOptions": [
+      { "answerText": "Canberra", "isCorrect": true },
+      { "answerText": "Sydney", "isCorrect": false },
+      { "answerText": "Melbourne", "isCorrect": false },
+      { "answerText": "Perth", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the capital of USA?",
+    "answerOptions": [
+      { "answerText": "Washington D.C.", "isCorrect": true },
+      { "answerText": "New York", "isCorrect": false },
+      { "answerText": "Los Angeles", "isCorrect": false },
+      { "answerText": "Chicago", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the capital of Russia?",
+    "answerOptions": [
+      { "answerText": "Moscow", "isCorrect": true },
+      { "answerText": "St. Petersburg", "isCorrect": false },
+      { "answerText": "Novosibirsk", "isCorrect": false },
+      { "answerText": "Yekaterinburg", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "What is the capital of China?",
+    "answerOptions": [
+      { "answerText": "Beijing", "isCorrect": true },
+      { "answerText": "Shanghai", "isCorrect": false },
+      { "answerText": "Guangzhou", "isCorrect": false },
+      { "answerText": "Shenzhen", "isCorrect": false }
+    ]
+  }
+]

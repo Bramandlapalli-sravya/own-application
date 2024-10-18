@@ -4,15 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./Components/store/store.js";
+import Newstore from "./MyOwnReduxToolkitProvider/store.js";
 import { Provider } from "react-redux";
+import MyOwnReduxToolkitProvider from "./MyOwnReduxToolkitProvider/MyOwnReduxToolkitProvider.js";
+import '../src/Components/Home/i18/index.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>
+  <Provider store={Newstore}>
+    <App />
+    {/* <MyOwnReduxToolkitProvider /> */}
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

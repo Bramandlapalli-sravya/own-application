@@ -1,0 +1,187 @@
+:root {
+  --theme-color: #2c3e50;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 100vh;
+  background-color: var(--theme-color); /* Dark blue-gray background */
+  overflow: auto;
+}
+
+.menu {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+.menu li,
+.header,
+.info li {
+  padding: 14px 20px; /* Padding around menu items */
+}
+
+.menu a {
+  font-size: 0.9rem;
+}
+
+.header {
+  margin: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.menu a,
+.header,
+.info a {
+  color: #ecf0f1;
+  text-decoration: none; /* Remove underline */
+  font-weight: 500; /* Set font weight */
+  display: block; /* Make the whole area clickable */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.menu li {
+  cursor: pointer;
+}
+
+.menu li:hover,
+.info li:hover {
+  background-color: #34495e; /* Darker background on hover */
+}
+
+.dropdown-toggle {
+  cursor: pointer; /* Change cursor to pointer */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between content */
+  align-items: center; /* Center vertically */
+  color: #ecf0f1;
+}
+
+.submenu {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 0;
+}
+
+.submenu a {
+  font-size: 0.8rem;
+}
+
+.submenu li {
+  color: #bdc3c7; /* Lighter text color for submenu */
+}
+
+/* Optional hover effect for submenu items */
+.submenu li:hover {
+  cursor: pointer;
+  background-color: var(--theme-color); /* Darker background on hover */
+}
+
+main {
+  flex: 1;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+}
+
+.search-input {
+  padding: 10px 20px 10px 44px;
+  border: 2px solid var(--theme-color);
+  border-radius: 50px;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: var(--theme-color) 0px 0px 3px;
+}
+
+.info ul {
+  padding: 0;
+  list-style: none;
+}
+
+.info li {
+  display: flex;
+  text-wrap: nowrap;
+}
+
+.email,
+.whatsapp {
+  margin-right: 6px;
+}
+
+.btn {
+  background-color: #2c3e50; /* Button color */
+  color: #ecf0f1; /* Light text color */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 1rem; /* Font size */
+  font-weight: 500; /* Font weight */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #34495e; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Slightly grow on hover */
+}
+
+.btn:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.main-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-container,
+input {
+  width: 70%;
+}
+
+.description {
+  padding: 20px 20px 0 20px;
+  font-size: 0.8rem;
+  color: var(--theme-color);
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h2 {
+  margin-bottom: 0;
+  color: var(--theme-color);
+}

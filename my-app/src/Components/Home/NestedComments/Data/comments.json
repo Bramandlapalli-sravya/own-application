@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "content": "This is a first comment",
+    "votes": 5,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": [
+      {
+        "id": 2,
+        "content": "This is a reply to the first comment",
+        "votes": 2,
+        "timestamp": "2024-06-16T10:00:0Z",
+        "replies": []
+      },
+      {
+        "id": 3,
+        "content": "This is a second reply to the first comment",
+        "votes": 3,
+        "timestamp": "2024-06-16T10:00:0Z",
+        "replies": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "content": "This is a second comment",
+    "votes": 3,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 5,
+    "content": "This is a third comment",
+    "votes": 1,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 6,
+    "content": "This is a fourth comment",
+    "votes": 4,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 7,
+    "content": "This is a fifth comment",
+    "votes": 2,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 8,
+    "content": "This is a sixth comment",
+    "votes": 3,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 9,
+    "content": "This is a seventh comment",
+    "votes": 5,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 10,
+    "content": "This is a eighth comment",
+    "votes": 2,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 11,
+    "content": "This is a ninth comment",
+    "votes": 3,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  },
+  {
+    "id": 12,
+    "content": "This is a tenth comment",
+    "votes": 1,
+    "timestamp": "2024-06-16T10:00:0Z",
+    "replies": []
+  }
+]

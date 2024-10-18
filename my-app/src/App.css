@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 35px);
+  grid-template-rows: repeat(var(--rows, 10), 35px);
+} */
+
+.box {
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}

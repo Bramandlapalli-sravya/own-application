@@ -20,9 +20,10 @@ function TopNavigation() {
             <TopNavigationStyles>
                 <div className="header">
                     <div className="sub-header">
-                        <img src={logo} alt="logo" width={40} height={40} style={{ borderRadius: 100 }} />
+                        {/* <img src={logo} alt="logo" width={40} height={40} style={{ borderRadius: 100 }} /> */}
                         <div className='sub-items'>
                             {navItems.map((item) => {
+                                // console.log(location.pathname, 'location.pathname');
                                 const isSelected = location.pathname === item.path;
                                 return (
                                     <Link to={item.path} key={item.name} className={`item ${isSelected ? 'selected' : ''} text-3xl font-bold underline`}>

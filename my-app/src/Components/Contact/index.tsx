@@ -1,39 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from 'axios';
 
+// Define a type for the product
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+}
+
 function Contact() {
-    // using fetch method for getting api data
+  const [products, setProducts] = useState<Product[]>([]);
 
-    const [products, setProducts] = React.useState<any>([]);
+  // Use axios to fetch products
+  useEffect(() => {
+    axios.get('https://fakestoreapi.com/products')
+      .then(response => setProducts(response.data))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []); // Add empty array to run useEffect only once
 
-    // useEffect(() => {
-    //     fetch('https://fakestoreapi.com/products').then(data => data.json()).then(data => setProducts(data));
-    // })
-
-    // In fetch method we have to convert the response to json format and then set the data to the state
-
-    useEffect(() => {
-        axios.get('https://fakestoreapi.com/products').then(data => setProducts(data.data));
-    })
-
-    // In axios method we can directly get the data by converting only. As axios converts and returns the data in json format
-
-    return (
-        <div className=" grid grid-cols-4 w-full h-full">
-            {products.map((product) => {
-                return (
-                    <div className="flex flex-col items-center gap-3">
-                        <div>{product.title}</div>
-                        <img src={product.image} style={{ height: '200px', maxWidth: '300px' }}></img>
-                        <div>{product.price}</div>
-                    </div>
-                )
-            })
-
-            }
+  return (
+    <div className="grid grid-cols-4 w-full h-full">
+      {products.map((product) => (
+        <div key={product.id} className="flex flex-col items-center gap-3">
+          <div>{product.title}</div>
+          <img src={product.image} style={{ height: '200px', maxWidth: '300px' }} alt={product.title} />
+          <div>{product.price}</div>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
 
 export default Contact;
-

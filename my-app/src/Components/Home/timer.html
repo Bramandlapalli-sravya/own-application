@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div>
+      <div className="timer">
+        <input
+          type="number"
+          class="hour"
+          placeholder="HH"
+          maxlength="2"
+          oninput="this.value = this.value.slice(0, maxLength)"
+        />
+        <input
+          type="number"
+          id="min"
+          placeholder="MM"
+          maxlength="2"
+          oninput="this.value = this.value.slice(0, maxLength)"
+        />
+        <input
+          type="number"
+          id="sec"
+          placeholder="SS"
+          maxlength="2"
+          oninput="this.value = this.value.slice(0, maxLength)"
+        />
+      </div>
+      <div className="buttons-list">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

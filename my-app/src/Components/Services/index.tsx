@@ -18,8 +18,6 @@ function Services() {
     ]
     const [clickedbox, setClickedbox] = React.useState<any>([]);
 
-
-
     const boxClick = (index) => {
         setClickedbox((boxes) => {
             const newClickedbox = [...boxes, index];
@@ -48,7 +46,7 @@ function Services() {
 
     return (
         <PageStyles>
-            <div className="grid grid-cols-3">
+            <div className="grid grid-col-3">
                 {
                     boxes.map((box, index) => {
                         return (

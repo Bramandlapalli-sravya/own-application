@@ -1,0 +1,20 @@
+.accordion {
+  h1 {
+    padding: 4px 20px;
+  }
+  h1,
+  ul {
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 8px;
+  }
+
+  ul li {
+    padding: 4px 40px;
+    border-bottom: 1px solid black;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+}

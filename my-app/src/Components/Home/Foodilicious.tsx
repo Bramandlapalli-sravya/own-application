@@ -82,7 +82,7 @@ const Foodilicious = () => {
             userId: 0,
             id: 0,
             title: 'Order Confirmed',
-        }).then((response) => console.log(response, 'post-request')).catch((error)=> console.log('here is', error)); // post request - to add 
+        }).then((response) => console.log(response, 'post-request')).catch((error) => console.log('here is', error)); // post request - to add 
     })
 
     useEffect(() => {
@@ -97,14 +97,14 @@ const Foodilicious = () => {
         axios.delete('https://jsonplaceholder.typicode.com/todos/4').then((response) => console.log(response, 'delete-request')); // delete request - to modify 
     })
 
-     async function getDetails() {
-        try{
+    async function getDetails() {
+        try {
             const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
             console.log(response, 'get-request');
-        } catch (error){
+        } catch (error) {
             console.log('error', error);
         }
-     }
+    }
 
 
 
